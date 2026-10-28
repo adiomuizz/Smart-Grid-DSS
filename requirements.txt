@@ -1,8 +1,12 @@
-pandapower
+
 numpy
 pandas
 matplotlib
-jupyter
-ipykernel
+seaborn
 scipy
 scikit-learn
+jupyter
+ipykernel
+pandapower
+statsmodels
+openpyxl
