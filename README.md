@@ -122,7 +122,7 @@ Smart-Grid-DSS/
 
 ## Data Sources and Research Integrity
 
-The research uses publicly reported electricity-sector indicators, including data attributed to the Nigerian Electricity Regulatory Commission (NERC) and the Transmission Company of Nigeria (TCN), subject to the availability and scope of each dataset but AMI consumption data used for theft detection was simulated, because no labelled Nigerian meter-tampering data is publicly available.
+The research uses publicly reported electricity-sector indicators, including data attributed to the Nigerian Electricity Regulatory Commission (NERC) and the Transmission Company of Nigeria (TCN), but AMI consumption data used for theft detection was simulated, because no labelled Nigerian meter-tampering data is publicly available.
 
 
 
