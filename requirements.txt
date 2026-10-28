@@ -1,0 +1,8 @@
+pandapower
+numpy
+pandas
+matplotlib
+jupyter
+ipykernel
+scipy
+scikit-learn
