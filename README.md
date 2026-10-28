@@ -10,17 +10,16 @@
 
 ## Overview
 
-The **Design and Implementation of Smart Grid Decision Support System (SG-DSS)** is a data-driven research project designed to support evidence-based decision-making in Nigeria's electricity sector. It focuses on characterising Aggregate Technical, Commercial and Collection (ATC&C) losses, examining their relationship with revenue losses, evaluating transmission loss trends, and prioritising potential interventions across electricity distribution companies (DisCos).
+The **Design and Implementation of Smart Grid Decision Support System (SG-DSS)** is a data-driven research project designed to support evidence-based decision-making in Nigeria's electricity sector. 
 
 The project combines statistical analysis, data visualisation, regression modelling, power-system simulation and anomaly-detection techniques to demonstrate how data analytics can support electricity-sector planning and loss-reduction strategies.
 
-The initial analysis covers Nigeria's eleven electricity distribution companies and selected quarterly sector-level indicators from 2024 to the second quarter of 2026. A Smart Grid Intervention Priority Index (SGIPI) is introduced to rank DisCos according to their relative ATC&C loss performance.
+The analysis covers Nigeria's eleven electricity distribution companies and selected quarterly sector-level indicators from 2024 to the second quarter of 2026. A Smart Grid Intervention Priority Index (SGIPI) is introduced to rank DisCos according to their relative ATC&C loss performance.
 
 > **Research objective:** To design and implement a data-driven Smart Grid Decision Support System for optimising power distribution and reducing ATC&C losses in the Nigerian electricity sector.
 
 
 
-The empirical analysis uses the stated reporting periods and datasets. Simulated network and anomaly-detection outputs are treated as experimental demonstrations rather than measurements of actual Nigerian electricity networks.
 
 ## Key Analytical Components
 
