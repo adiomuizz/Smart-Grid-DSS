@@ -1,12 +1,30 @@
 
+# Data analysis
 numpy
 pandas
+scipy
+
+# Visualisation
 matplotlib
 seaborn
-scipy
+plotly
+
+# Statistical analysis and machine learning
 scikit-learn
-jupyter
-ipykernel
-pandapower
 statsmodels
+
+# Power system modelling and simulation
+pandapower
+
+# Jupyter Notebook support
+jupyter
+notebook
+ipykernel
+ipywidgets
+
+# Excel and data file support
 openpyxl
+xlrd
+
+# Utilities
+requests
