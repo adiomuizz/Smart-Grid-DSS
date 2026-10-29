@@ -1,0 +1,108 @@
+{
+  "data_honesty_note": "Synthetic data only. Injected anomalies are not confirmed real-world electricity theft.",
+  "random_seed": 42,
+  "n_meters": 200,
+  "n_days": 120,
+  "n_daily_observations": 24000,
+  "n_injected_anomalies": 30,
+  "n_normal_meters": 170,
+  "test_size": 0.3,
+  "n_train_meters": 140,
+  "n_test_meters": 60,
+  "model": "IsolationForest",
+  "n_estimators": 300,
+  "contamination": 0.15,
+  "feature_names": [
+    "mean_kwh",
+    "coeff_variation",
+    "trend_ratio",
+    "min_to_mean_ratio",
+    "weekend_to_weekday_ratio",
+    "week_on_week_volatility",
+    "flatness"
+  ],
+  "evaluation_method": "Stratified meter-level hold-out. Isolation Forest fitted on training features only. Training-derived threshold applied to the held-out test partition. Synthetic labels used for evaluation only.",
+  "training_metrics_descriptive_only": {
+    "n_evaluated": 140,
+    "n_normal": 119,
+    "n_anomalous": 21,
+    "precision": 0.8571428571428571,
+    "recall": 0.8571428571428571,
+    "f1_score": 0.8571428571428571,
+    "roc_auc": 0.9935974389755903,
+    "average_precision": 0.9678216883185831,
+    "accuracy": 0.9571428571428572,
+    "specificity": 0.9747899159663865,
+    "negative_predictive_value": 0.9747899159663865,
+    "balanced_accuracy": 0.9159663865546218,
+    "true_positives": 18,
+    "false_positives": 3,
+    "true_negatives": 116,
+    "false_negatives": 3
+  },
+  "held_out_test_metrics": {
+    "n_evaluated": 60,
+    "n_normal": 51,
+    "n_anomalous": 9,
+    "precision": 0.8888888888888888,
+    "recall": 0.8888888888888888,
+    "f1_score": 0.8888888888888888,
+    "roc_auc": 0.9956427015250544,
+    "average_precision": 0.9765432098765434,
+    "accuracy": 0.9666666666666667,
+    "specificity": 0.9803921568627451,
+    "negative_predictive_value": 0.9803921568627451,
+    "balanced_accuracy": 0.934640522875817,
+    "true_positives": 8,
+    "false_positives": 1,
+    "true_negatives": 50,
+    "false_negatives": 1
+  },
+  "test_pattern_breakdown": [
+    {
+      "pattern": "step_down",
+      "n_test_meters": 4,
+      "caught": 4,
+      "missed": 0,
+      "recall": 1.0,
+      "status": "Evaluated"
+    },
+    {
+      "pattern": "partial_siphon",
+      "n_test_meters": 2,
+      "caught": 1,
+      "missed": 1,
+      "recall": 0.5,
+      "status": "Evaluated"
+    },
+    {
+      "pattern": "flat_line",
+      "n_test_meters": 0,
+      "caught": 0,
+      "missed": 0,
+      "recall": null,
+      "status": "No examples in test partition"
+    },
+    {
+      "pattern": "zero_weekend",
+      "n_test_meters": 3,
+      "caught": 3,
+      "missed": 0,
+      "recall": 1.0,
+      "status": "Evaluated"
+    }
+  ],
+  "injected_pattern_counts_all_meters": {
+    "step_down": 9,
+    "partial_siphon": 6,
+    "flat_line": 7,
+    "zero_weekend": 8
+  },
+  "interpretation_limitations": [
+    "Synthetic performance is not real-world validation.",
+    "Injected anomalies may be easier to detect than real theft.",
+    "Contamination is configured using the known synthetic anomaly fraction; this is an experimental assumption.",
+    "Small held-out sample sizes make metrics uncertain.",
+    "A flagged meter is a candidate for investigation, not proof of electricity theft."
+  ]
+}

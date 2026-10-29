@@ -1,0 +1,5 @@
+pattern,n_test_meters,caught,missed,recall,status
+step_down,4,4,0,1.0,Evaluated
+partial_siphon,2,1,1,0.5,Evaluated
+flat_line,0,0,0,,No examples in test partition
+zero_weekend,3,3,0,1.0,Evaluated
