@@ -1,8 +1,7 @@
-
 # Ignore everything by default
 *
 
-# Allow Git to access project folders
+# Allow project files and folders
 !.gitignore
 !README.md
 !requirements.txt
@@ -13,7 +12,7 @@
 !outputs/
 !outputs/**
 
-# Ignore Python cache and virtual environments
+# Ignore temporary files and environments
 __pycache__/
 *.py[cod]
 .venv/
